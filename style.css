@@ -1,0 +1,53 @@
+body {
+  background-color: white;
+
+  /* daytime color: #ccebff */
+
+}
+
+.center {
+  margin: 15px;
+}
+.left-side {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.right-side {
+  position: relative;
+  left: 864px;
+  top: -434px;
+/*  top: -400px;*/
+}
+#flex-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55em;
+}
+#flagImg {
+  font-size: 1750%;
+  background-color: #ff6666;
+}
+#location_data {
+  background-color:#c2c2d6;
+}
+#clock {
+  background-color: #668cff;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  margin-top: 15px;
+}
+#ISSmap {
+  height: 400px;
+  width: 400px;
+}

@@ -1,0 +1,117 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jules api data</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<link rel="stylesheet" href="./style.css">
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+ integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+ crossorigin=""></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+<body>
+  <div id="flex-container">
+    <div>
+      <div id="clock" class="left-side ">
+        <canvas id="canvas" width="180" height="180" style="white">
+      </canvas>
+      </div>
+      <div id="flag" class="left-side">
+        <h1 id="flagImg"></h1>
+      </div>
+    </div>
+    <div id="location_data" class="center">
+      <table class="table">
+          <tr>
+            <th scope="col">ip address</th>
+            <td id="ip"></td>
+          </tr>
+          <tr>
+            <th scope="col">Country</th>
+            <td id="country"></td>
+          </tr>
+          <tr>
+            <th scope="col">country code</th>
+            <td id="countryCode"></td>
+          </tr>
+          <tr>
+            <th scope="col">region</th>
+            <td id="region"></td>
+          </tr>
+          <tr>
+            <th scope="col">city</th>
+            <td id="city"></td>
+          </tr>
+          <tr>
+            <th scope="col">latitude</th>
+            <td id="latitude"></td>
+          </tr>
+          <tr>
+            <th scope="col">longitude</th>
+            <td id="longitude"></td>
+          </tr>
+          <tr>
+            <th scope="col">timezone</th>
+            <td id="timezone"></td>
+          </tr>
+          <tr>
+            <th scope="col">time</th>
+            <td id="time"></td>
+          </tr>
+          <tr>
+            <th scope="col">language</th>
+            <td id="language"></td>
+          </tr>
+          <tr>
+            <th scope="col">population in 2018</th>
+            <td id="population"></td>
+          </tr>
+          <tr>
+            <th>sunrise</th>
+            <td id="sunrise"></td>
+          </tr>
+          <tr>
+            <th>sunset</th>
+            <td id="sunset"></td>
+          </tr>
+          <tr>
+            <th>solar noon time</th>
+            <td id="solarNoon"></td>
+          </tr>
+          <tr>
+            <th>day length</th>
+            <td id="dayLength"></td>
+          </tr>
+          <tr>
+            <th>the number of people currently in space</th>
+            <td id="spacePeopleInSpace"></td>
+          </tr>
+          <tr>
+            <th>ISS latitude</th>
+            <td id="ISSlatitude"></td>
+          </tr><tr>
+            <th>ISS longitude</th>
+            <td id="ISSlongitude"></td>
+          </tr>
+      </table>
+  </div>
+  <div id="map" class="flex-container"></div>
+    </div>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4F1pGNW0mfcuxiyMjqXPgEesHl5D082M&callback=myMap"
+      defer
+    ></script>
+    <div id="ISSmap" class="right-side"></div>
+</body>
+<script src=./script.js></script>
+<script src=./clock.js></script>
+</html>
+<!-- http://api.ipstack.com/47.20.157.230?access_key=e58077d13cf3dfb1806df4c10d5c24d9-->
+
+<!-- api key for google maps api AIzaSyBNbbcjfqqirSKPvBqtgTiQUKitIR63EKE-->
